@@ -5,10 +5,8 @@
 multimodal_analysis/multimodal_analysis.py
 This module extracts all relevant features from Instagram-style posts, including:
 
-Image, video, and embedded text content
-Captions
-PHQ-9 indicators (based on multimodal embeddings)
-It performs a comprehensive analysis by leveraging image, audio, and text modalities to assess user mental health signals.
+Image/video, embedded text, caption features, activities, sentiment PHQ-9 features
+It performs a comprehensive analysis by leveraging image/video, audio, and text modalities which they posted on instagram to assess user mental health.
 
 
 
