@@ -1,4 +1,4 @@
-# Depression-detection-based-on-instagram-posts
+# LLM based Depression-detection-based-on-instagram-posts
 
 📁 Project Modules
 
