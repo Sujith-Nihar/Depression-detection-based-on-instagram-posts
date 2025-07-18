@@ -14,9 +14,12 @@ Contains download links and information for:
 ---
 
 ### 🤖 Depressed_post_classifier/
+
+This module identifies whether an individual Instagram post (not the user) is depressed or non-depressed based on its content.
+
 Includes:
 - Dataset preparation and preprocessing
-- Feature extraction (text, image, etc.)
+- Feature extraction (from text, image, etc.)
 - Model building and evaluation
 - Deployment: [Streamlit Dashboard](#) *(https://depression-detection-project-dashboard-5uiay23wnhah5jfkecboyz.streamlit.app)*
 
@@ -24,9 +27,8 @@ Includes:
 
 ### 📈 Mood_progression/
 Tracks mood progression of users over time using:
-- Time-based post grouping
 - Emotionally intense posts filtered via PHQ-9
-- Mood summaries generated using LLMs
+- Mood summaries based on users emotion scores, posts (image/video and captions) generated using LLMs
 - Results of mood progression results can be found on [Streamlit Dashboard](#) *(http://patient-medical-records.vercel.app)*
 
 ---
@@ -37,7 +39,7 @@ Similar to mood progression, but tracks **PHQ-9 intensity scores** over time per
 ---
 
 ### 😐 emotion_scores_from_LLM/
-Performs emotion extraction for:
+Performs emotion scores extraction for:
 - **Individual modalities**: captions (text), images, and videos
 - **Dynamic fusion** of modalities for final emotion scores
 - Visualizations and comparative results for depressed vs. happy users
