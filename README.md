@@ -27,6 +27,7 @@ Tracks mood progression of users over time using:
 - Time-based post grouping
 - Emotionally intense posts filtered via PHQ-9
 - Mood summaries generated using LLMs
+- Results of mood progression results can be found on [Streamlit Dashboard](#) *(http://patient-medical-records.vercel.app)*
 
 ---
 
