@@ -1,32 +1,69 @@
-# LLM based Depression-detection-based-on-instagram-posts
+# Multimodal Instagram Depression Analysis
 
-📁 Project Modules
+This project analyzes Instagram posts to detect and understand depression and mood progression in users using multimodal features and LLMs. It combines image, video, and textual data with emotion and PHQ-9 scores for rich, explainable analysis.
 
-multimodal_analysis/multimodal_analysis.py
-This module extracts all relevant features from Instagram-style posts, including:
+---
 
-Image/video, embedded text, caption features, activities, sentiment PHQ-9 features
-It performs a comprehensive analysis by leveraging image/video, audio, and text modalities which they posted on instagram to assess user mental health.
+## 📁 Project Structure
 
+### 🔗 Datasets/
+Contains download links and information for:
+- **Depressed users’ posts**
+- **Happy/non-depressed users’ posts**
 
+---
 
-MOOD/get_mood_summary_from_LLM.py
-This script uses a large language model to analyze the mood trajectory of a given profile over time.
-It processes:
+### 🤖 Depressed_post_classifier/
+Includes:
+- Dataset preparation and preprocessing
+- Feature extraction (text, image, etc.)
+- Model building and evaluation
+- Deployment: [Streamlit Dashboard](#) *(Insert dashboard link here)*
 
-Images and videos
-Embedded text (e.g., text in memes or screenshots)
-Captions
-It then generates a time-series summary of emotional states across user posts.
+---
 
+### 📈 Mood_progression/
+Tracks mood progression of users over time using:
+- Time-based post grouping
+- Emotionally intense posts filtered via PHQ-9
+- Mood summaries generated using LLMs
 
-PHQ/get_phq9_summary_from_LLM.py
-This script estimates PHQ-9 scores progression over time for a specific profile, again using multimodal inputs:
+---
 
-Image/video features
-Embedded/in-post text
-Captions
-It provides a timeline-based view of possible depression indicators based on post content.
+### 🧠 PHQ_9_progression/
+Similar to mood progression, but tracks **PHQ-9 intensity scores** over time per user, filtered from emotional posts and analyzed with LLM support.
+
+---
+
+### 😐 emotion_scores_from_LLM/
+Performs emotion extraction for:
+- **Individual modalities**: captions (text), images, and videos
+- **Dynamic fusion** of modalities for final emotion scores
+- Visualizations and comparative results for depressed vs. happy users
+
+---
+
+### 🎭 multimodal_analysis/
+Aggregates and analyzes all multimodal features of Instagram posts:
+- Image, video, caption, embedded text
+- Sentiment, PHQ-9 scores, colors, hue, saturation, etc.
+- Enables rich analysis for depression detection and progression
+
+---
+
+## 📄 project_report.pdf
+Contains the final detailed report with all implementation steps, evaluations, and insights.
+
+---
+
+## 📑 README.md
+You’re here!
+
+---
+
+## 📌 Notes
+- This project uses LLMs and computer vision tools for mental health analysis.
+- Ethical considerations and privacy guidelines are followed while working with social media data.
 
 
 ## 👨‍💻 Project Authors
