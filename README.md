@@ -18,7 +18,7 @@ Includes:
 - Dataset preparation and preprocessing
 - Feature extraction (text, image, etc.)
 - Model building and evaluation
-- Deployment: [Streamlit Dashboard](#) *(Insert dashboard link here)*
+- Deployment: [Streamlit Dashboard](#) *(https://depression-detection-project-dashboard-5uiay23wnhah5jfkecboyz.streamlit.app)*
 
 ---
 
